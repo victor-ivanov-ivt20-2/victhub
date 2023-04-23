@@ -59,6 +59,6 @@ COPY --from=builder --chown=nextjs:nodejs /app/.next/static ./.next/static
 USER nextjs
 EXPOSE 3000
 ENV PORT 3000
-RUN npm --global config set user root && \
-    npm --global install pm2
+ENV NPM_CONFIG_PREFIX=/home/node/.npm-global
+RUN npm --global install pm2
 CMD ["pm2-runtime", "server.js"]
