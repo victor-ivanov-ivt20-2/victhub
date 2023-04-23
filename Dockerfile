@@ -60,5 +60,5 @@ USER nextjs
 EXPOSE 3000
 ENV PORT 3000
 ENV NPM_CONFIG_PREFIX=/home/node/.npm-global
-RUN npm --global install pm2
+RUN npm --global install pm2 --unsafe-perm=true --allow-root
 CMD ["pm2-runtime", "server.js"]
