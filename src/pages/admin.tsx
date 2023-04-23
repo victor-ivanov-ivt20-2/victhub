@@ -5,7 +5,7 @@ import AdminLayout from "~/layouts/adminLayout";
 const AdminPage: NextPage = () => {
   return (
     <AdminLayout title="Крутая админка">
-      <div>ADMIN</div>
+      <div>ADMINKA</div>
 
       <CreateScheduleForm />
       <CreateSubjectForm />
