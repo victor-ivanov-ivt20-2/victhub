@@ -60,5 +60,4 @@ USER nextjs
 EXPOSE 3000
 ENV PORT 3000
 
-RUN npm install pm2
-CMD ["pm2-runtime", "server.js"]
+CMD ["node", "server.js"]
